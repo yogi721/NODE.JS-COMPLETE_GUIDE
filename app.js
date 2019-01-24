@@ -1,5 +1,8 @@
 const http = require('http');
 
-http.createServer(fonction(req, res){
-
+// create server: arrow function
+const server = http.createServer((req, res) => {
+    console.log(req);
 });
+
+server.listen(3000);
